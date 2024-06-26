@@ -1,10 +1,10 @@
 Run Name: $runName
 
 <% if (success){
-    out << "## amd/amdtowerdemo execution completed successfully! ##"
+    out << "## AMDTower Demo execution completed successfully! ##"
 } else {
     out << """####################################################
-## amd/amdtowerdemo execution completed unsuccessfully! ##
+## AMDTower Demo execution completed unsuccessfully! ##
 ####################################################
 The exit status of the task that caused the workflow execution to fail was: $exitStatus.
 The full error message was:
@@ -27,5 +27,5 @@ Pipeline Configuration:
 <% out << summary.collect{ k,v -> " - $k: $v" }.join("\n") %>
 
 --
-amd/amdtowerdemo
-https://github.com/amd/amdtowerdemo
+AMDTower Demo
+https://github.com/CDCgov/AMDTower Demo
