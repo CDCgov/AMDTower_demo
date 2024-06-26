@@ -1,1 +1,7 @@
-*.vscode/*
+# vscode
+*.vscode/
+
+# nextflow runs
+.nextflow*
+work/
+results/
